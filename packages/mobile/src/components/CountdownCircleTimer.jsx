@@ -29,6 +29,7 @@ const CountdownCircleTimer = (props) => {
     renderAriaTime,
     initialRemainingTime,
     rotation,
+    wrapperStyle,
   } = props
 
   const {
@@ -57,7 +58,7 @@ const CountdownCircleTimer = (props) => {
 
   return (
     <View
-      style={styles.wrapper}
+      style={[styles.wrapper, wrapperStyle]}
       accessible={true}
       accessibilityLabel={ariaLabel}
     >
